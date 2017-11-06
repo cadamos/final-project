@@ -1,0 +1,19 @@
+<template name="Profile_Page">
+
+  <div class="ui text container segment">
+    <div class="ui three column grid">
+      {{#each getClubs}}
+      <div class="column">
+        <div class="ui fluid card">
+          <div class="image">
+            <img src="http://lorempixel.com/200/200/">
+          </div>
+          <div class="content">
+            <a class="header">{{this.nameoforganization}}</a>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+</template>
